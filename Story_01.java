@@ -42,7 +42,7 @@ public class Story_01 {
                 break;
         }
     }
-
+    
 }
 
     public static void s1_1(){

@@ -3,7 +3,7 @@ public class Hero {
     int hp;
     int attack;
     int speed;
-
+    
     Hero(String a, int b, int c, int d){
         name = a;
         hp = b;

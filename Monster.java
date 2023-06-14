@@ -3,7 +3,7 @@ public class Monster {
     int hp;
     int attack;
     int speed; 
-
+    
     Monster(String a, int b, int c, int d){
         name = a;
         hp = b;

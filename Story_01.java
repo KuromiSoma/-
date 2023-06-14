@@ -18,37 +18,43 @@ public class Story_01 {
     // 行き先を選ぶ
     System.out.println("どこへ向かおうか？");
     System.out.println("1:魔物の森 2:綺麗な川");
-    Scanner scanner2 = new Scanner(System.in);
-    int choice02 = scanner2.nextInt();
-
     
-    for (int for1 = 0; for1 < 10; for1 *= 1){}
-    switch (choice02){
-        case 1:
-        s1_1();
-        break;
+    boolean validInput01 = false; // 1か2を入力させるため
 
-        case 2:
-        s1_2();
-        break;
+    while (!validInput01) {
 
-        default:
-        System.out.println("再度入力してください");
-        break;
+        Scanner scanner2 = new Scanner(System.in);
+        int choice02 = scanner2.nextInt(); // 入力を受け取る
+
+        switch (choice02) {
+            case 1:
+                s1_1();
+                validInput01 = true; // 入力が正しい場合はvalidInput01をtrueに設定してループを終了
+                break;
+    
+            case 2:
+                s1_2();
+                validInput01 = true; // 入力が正しい場合はvalidInput01をtrueに設定してループを終了
+                break;
+    
+            default:
+                System.out.println("再度入力してください");
+                break;
+        }
     }
 
-    }
+}
 
-    
     public static void s1_1(){
     // スライムを召喚
     Monster sa = new Monster("スライムA", 30, 5, 15);
     System.out.println(sa.name + "が現れた！");
+
     }
 
     public static void s1_2(){
-        //　釣りを始める
-        System.out.println("川釣りをして魚をゲットしましょう");
+    //　釣りを始める
+    System.out.println("川釣りをして魚をゲットしましょう");
     }
 
 }

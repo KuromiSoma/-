@@ -1,10 +1,14 @@
 public class Hero {
     String name;
     int hp;
+    int attack;
+    int speed;
 
-    Hero(String a, int b){
+    Hero(String a, int b, int c, int d){
         name = a;
         hp = b;
+        attack = c;
+        speed = d;
     }
     
     public void sleep(){

@@ -38,7 +38,6 @@ public class Hero {
 
         Scanner scanner = new Scanner(System.in);
         int whatUp = scanner.nextInt();
-        scanner.close();
 
         switch(whatUp){
             case 1:
@@ -71,7 +70,6 @@ public class Hero {
         
      Scanner scanner = new Scanner(System.in);
      scanner.nextLine(); // Enterキーが押されるまで待機
-     scanner.close();
     
     }
 

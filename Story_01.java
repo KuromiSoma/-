@@ -23,7 +23,6 @@ public class Story_01 {
         
     Scanner scanner0 = new Scanner(System.in);
     scanner0.nextLine(); // Enterキーが押されるまで待機
-    scanner0.close();
 
     // 行き先を選ぶ
     System.out.println("どこへ向かおうか？");
@@ -35,7 +34,6 @@ public class Story_01 {
 
         Scanner scanner2 = new Scanner(System.in);
         int choice02 = scanner2.nextInt(); // 入力を受け取る
-        scanner2.close();
 
         switch (choice02) {
             case 1:
@@ -67,7 +65,6 @@ public class Story_01 {
         
     Scanner scanner0a = new Scanner(System.in);
     scanner0a.nextLine(); // Enterキーが押されるまで待機
-    scanner0a.close();
 
     if(h.speed >= sa.speed) {
         System.out.println(h.name + "の行動");
@@ -82,7 +79,6 @@ public class Story_01 {
 
         Scanner scanner3 = new Scanner(System.in);
         int choice03 = scanner3.nextInt(); // 入力を受け取る
-        scanner3.close();
 
         switch (choice03) {
             case 1: // 戦う場合
@@ -117,7 +113,6 @@ public class Story_01 {
 
                     Scanner scanner4 = new Scanner(System.in);
                     int choice04 = scanner4.nextInt(); // 入力を受け取る
-                    scanner4.close();
 
 
                     switch (choice04) {
@@ -177,7 +172,6 @@ public class Story_01 {
         
     Scanner scanner0b = new Scanner(System.in);
     scanner0b.nextLine(); // Enterキーが押されるまで待機
-    scanner0b.close();
     System.out.println("");
     }
 

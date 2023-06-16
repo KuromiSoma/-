@@ -1,9 +1,13 @@
+package Story;
 import java.util.Scanner;
+
+import character.Hero;
+import character.Monster;
 
 public class Story_01 {
 
-    private static Hero h;
-    private static Monster sa;
+    public static Hero h;
+    public static Monster sa;
     private static Scanner scanner = new Scanner(System.in); 
 
     public static void s0() {

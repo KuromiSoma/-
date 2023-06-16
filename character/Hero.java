@@ -1,19 +1,20 @@
+package character;
 import java.util.Scanner;
 
 public class Hero {
-    String name;
-    int maxHp;
-    int hp;
-    int attack;
-    int speed;
-    int EXP;
+    public String name;
+    public int maxHp;
+    public int hp;
+    public int attack;
+    public int speed;
+    public int EXP;
     
-    Hero(String a, int b, int c, int d, int e){
-        name = a;
-        maxHp = b;
-        hp = c;
-        attack = d;
-        speed = e;
+    public Hero(String a, int b, int c, int d, int e){
+        this.name = a;
+        this.maxHp = b;
+        this.hp = c;
+        this.attack = d;
+        this.speed = e;
 
     }
 

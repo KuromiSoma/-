@@ -39,6 +39,7 @@ public class Hero {
         System.out.println("3 : スピード");
 
         int whatUp = scanner.nextInt();
+        scanner.nextLine();
 
         switch(whatUp){
             case 1:

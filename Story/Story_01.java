@@ -33,6 +33,8 @@ public class Story_01 {
 
         while (!validInput01) {
             int choice02 = scanner.nextInt(); // 入力を受け取る
+            scanner.nextLine();
+            
 
             switch (choice02) {
                 case 1:
@@ -78,6 +80,7 @@ public class Story_01 {
                 System.out.println("");
 
                 int choice03 = scanner.nextInt(); // 入力を受け取る
+                scanner.nextLine();
 
                 switch (choice03) {
                     case 1: // 戦う場合

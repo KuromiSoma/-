@@ -19,6 +19,7 @@ public class Story_02 {
 
         while (!validInput01) {
             int choice01 = scanner.nextInt(); // 入力を受け取る
+            scanner.nextLine();
 
             switch (choice01) {
                 case 1:
@@ -43,10 +44,14 @@ public class Story_02 {
 
 public static void s2_1() {
 
+    sb = new SuperMonster("キングスライム",200,30,60,30);
+    System.out.println(sb.name + "が現れた！");
+
+
 }
 
 public static void s2_2() {
-    
+
 }
 
 }

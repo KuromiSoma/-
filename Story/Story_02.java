@@ -8,7 +8,7 @@ public class Story_02 {
     public static SuperMonster sb;
     // 退避中 public static Scanner scanner2 = new Scanner(System.in); 
     
-    public static void s0(Scanner scanner) {
+    public void s0(Scanner scanner) {
 
         System.out.println("どこへ向かおうか？");
         System.out.println("1:埼玉県 2:八王子市");
@@ -16,15 +16,6 @@ public class Story_02 {
         boolean validInput01 = false; // 1か2を入力させるため
         
         while (!validInput01) {
-
-            if (scanner.hasNextInt()) {
-                System.out.println("あり");
-
-            } else {
-                System.out.println("なし");
-
-            }
-  
 
             int choice01 = scanner.nextInt(); // 入力を受け取る
             scanner.nextLine(); // 改行文字を読み捨てる
@@ -51,12 +42,12 @@ public class Story_02 {
 
 }
 
-public static void s2_1(Scanner scanner) {
+public void s2_1(Scanner scanner) {
     System.out.println("埼玉県に来た！何もなかった！");
     System.out.println("GAMEOVER");
 }
 
-public static void s2_2(Scanner scanner) {
+public void s2_2(Scanner scanner) {
 
     sb = new SuperMonster("キングスライム", 30, 5, 15, 10);
     System.out.println(sb.name + "が現れた！");
@@ -81,7 +72,7 @@ public static void s2_2(Scanner scanner) {
 
 }
 
-public static void s2_2_a(Scanner scanner) {
+public void s2_2_a(Scanner scanner) {
 
     boolean validInput02 = false; // 1か2を入力させるため
 
@@ -164,7 +155,7 @@ public static void s2_2_a(Scanner scanner) {
                 }
             
 
-public static void s2_2_b(Scanner scanner) {
+public void s2_2_b(Scanner scanner) {
 
     boolean validInput4 = false;
 

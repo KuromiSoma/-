@@ -10,7 +10,7 @@ public class Story_01 {
     public static Monster sa;
     // 退避中 public static Scanner scanner = new Scanner(System.in); 
 
-    public static void s0(Scanner scanner) {
+    public Scanner s0(Scanner scanner) {
         System.out.println("あなたの名前を入力してください");
         String heroName = scanner.nextLine(); 
 
@@ -41,6 +41,7 @@ public class Story_01 {
             switch (choice02) {
                 case 1:
                     s1_1(scanner);
+
                     validInput01 = true; // 入力が正しい場合はvalidInput01をtrueに設定してループを終了
                     break;
 
@@ -55,12 +56,13 @@ public class Story_01 {
             }
 
         }
+        return scanner;
 
     }
 
 
 
-    public static void s1_1(Scanner scanner){
+    public void s1_1(Scanner scanner){
         // スライムを召喚
         sa = new Monster("スライム", 30, 5, 15);
         System.out.println(sa.name + "が現れた！");
@@ -155,7 +157,7 @@ public class Story_01 {
         }
     }
 
-    public static void s1_2(Scanner scanner){
+    public void s1_2(Scanner scanner){
         // 釣りを始める
         System.out.println("川釣りをして魚をゲットした！");
         System.out.println(h.name + "の最大HPが 10 増えた！" );

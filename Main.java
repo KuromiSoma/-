@@ -7,7 +7,10 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in); 
 
-        Story_01.s0(scanner);
-        Story_02.s0(scanner);
+        Story_01 s1 = new Story_01();
+        Story_02 s2 = new Story_02();
+
+        scanner = s1.s0(scanner);
+        s2.s0(scanner);
     }
 }

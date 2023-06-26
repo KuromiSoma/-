@@ -8,7 +8,7 @@ public class Story_01 {
 
     public static Hero h;
     public static Monster sa;
-    private static Scanner scanner = new Scanner(System.in); 
+    public static Scanner scanner = new Scanner(System.in); 
 
     public static void s0() {
         System.out.println("あなたの名前を入力してください");
@@ -32,6 +32,8 @@ public class Story_01 {
         boolean validInput01 = false; // 1か2を入力させるため
 
         while (!validInput01) {
+
+
             int choice02 = scanner.nextInt(); // 入力を受け取る
             scanner.nextLine();
             
@@ -44,7 +46,6 @@ public class Story_01 {
 
                 case 2:
                     s1_2();
-                    s1_1();
                     validInput01 = true; // 入力が正しい場合はvalidInput01をtrueに設定してループを終了
                     break;
 
@@ -52,9 +53,9 @@ public class Story_01 {
                     System.out.println("再度入力してください");
                     break;
             }
+
         }
 
-        scanner.close();
     }
 
 

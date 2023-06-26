@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class Story_02 {
     public static SuperMonster sb;
-    private static Scanner scanner = new Scanner(System.in);
+    public static Scanner scanner2 = new Scanner(System.in); 
     
     public static void s0() {
 
@@ -14,11 +14,21 @@ public class Story_02 {
         System.out.println("1:埼玉県 2:八王子市");
 
         boolean validInput01 = false; // 1か2を入力させるため
-
+        
         while (!validInput01) {
 
-            int choice01 = scanner.nextInt(); // 入力を受け取る
-            scanner.nextLine();
+            if (scanner2.hasNextInt()) {
+                System.out.println("あり");
+
+            } else {
+                System.out.println("なし");
+
+            }
+  
+
+            int choice01 = scanner2.nextInt(); // 入力を受け取る
+            scanner2.nextLine(); // 改行文字を読み捨てる
+
 
             switch (choice01) {
                 case 1:
@@ -37,7 +47,7 @@ public class Story_02 {
             }
         }
 
-        scanner.close();
+  
 
 }
 
@@ -52,7 +62,7 @@ public static void s2_2() {
     System.out.println(sb.name + "が現れた！");
     System.out.println("【戦闘開始】");
     System.out.println("Enterキーを押して次に進んでください");
-    scanner.nextLine(); // Enterキーが押されるまで待機
+    scanner2.nextLine(); // Enterキーが押されるまで待機
 
     boolean validInput01 = false; // 1か2を入力させるため
 
@@ -80,8 +90,8 @@ public static void s2_2_a() {
                 System.out.println("1:攻撃 2:逃げる");
                 System.out.println("");
 
-                int choice03 = scanner.nextInt(); // 入力を受け取る
-                scanner.nextLine();
+                int choice03 = scanner2.nextInt(); // 入力を受け取る
+                scanner2.nextLine();
 
                 switch (choice03) {
                     case 1: // 戦う場合
@@ -94,7 +104,7 @@ public static void s2_2_a() {
                             System.out.println(sb.name + "が倒れた");
 
                             System.out.println("Enterキーを押して次に進んでください");
-                            scanner.nextLine(); // Enterキーが押されるまで待機
+                            Story_01.scanner.nextLine(); // Enterキーが押されるまで待機
 
                             System.out.println(Story_01.h.name + "は経験値を 25 獲得した！");
                             Story_01.h.Experience(25);
@@ -114,7 +124,7 @@ public static void s2_2_a() {
 
                             while(!validInput3) {
 
-                                int choice04 = scanner.nextInt(); // 入力を受け取る
+                                int choice04 = Story_01.scanner.nextInt(); // 入力を受け取る
 
                                 int randomNumber1 = random.nextInt(2) + 1; // 1から2までのランダムな数値を生成
 
@@ -137,7 +147,7 @@ public static void s2_2_a() {
 
                         System.out.println(Story_01.h.name + "は逃げ出した。");
 
-                        scanner.nextLine(); // Enterキーが押されるまで待機
+                        Story_01.scanner.nextLine(); // Enterキーが押されるまで待機
 
                         System.out.println("");
                         break;
@@ -172,7 +182,7 @@ public static void s2_2_b() {
 
         while(!validInput5) {
     
-        int choice5 = scanner.nextInt(); // 入力を受け取る
+        int choice5 = Story_01.scanner.nextInt(); // 入力を受け取る
 
         int randomNumber2 = random.nextInt(2) + 1; // 1から2までのランダムな数値を生成
         
@@ -210,8 +220,8 @@ public static void s2_2_b() {
         System.out.println("1:攻撃 2:逃げる");
         System.out.println("");
 
-        int choice04 = scanner.nextInt(); // 入力を受け取る
-        scanner.nextLine();
+        int choice04 = Story_01.scanner.nextInt(); // 入力を受け取る
+        Story_01.scanner.nextLine();
 
            switch (choice04) {
                     case 1: // 戦う場合
@@ -224,7 +234,7 @@ public static void s2_2_b() {
                             System.out.println(sb.name + "が倒れた");
 
                             System.out.println("Enterキーを押して次に進んでください");
-                            scanner.nextLine(); // Enterキーが押されるまで待機
+                            Story_01.scanner.nextLine(); // Enterキーが押されるまで待機
 
                             System.out.println(Story_01.h.name + "は経験値を 25 獲得した！");
                             Story_01.h.Experience(25);
@@ -239,7 +249,7 @@ public static void s2_2_b() {
 
                         System.out.println(Story_01.h.name + "は逃げ出した。");
 
-                        scanner.nextLine(); // Enterキーが押されるまで待機
+                        Story_01.scanner.nextLine(); // Enterキーが押されるまで待機
 
                         System.out.println("");
                         break;

@@ -1,10 +1,13 @@
 import Story.Story_01;
 import Story.Story_02;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        
-        Story_01.s0();
-        Story_02.s0();
+
+        Scanner scanner = new Scanner(System.in); 
+
+        Story_01.s0(scanner);
+        Story_02.s0(scanner);
     }
 }

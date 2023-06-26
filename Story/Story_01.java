@@ -61,7 +61,7 @@ public class Story_01 {
 
     public static void s1_1(){
         // スライムを召喚
-        sa = new Monster("スライムA", 30, 5, 15);
+        sa = new Monster("スライム", 30, 5, 15);
         System.out.println(sa.name + "が現れた！");
         System.out.println("【戦闘開始】");
 
@@ -115,13 +115,13 @@ public class Story_01 {
 
                                 switch (choice04) {
                                     case 1:
-                                        System.out.println(sa.name + "の攻撃をかわした！");
+                                        System.out.println("攻撃を回避した！");
                                         System.out.println("");
                                         validInput3 = true;
                                         break;
 
                                     case 2:
-                                        System.out.println(sa.name + "の攻撃をくらった！");
+                                        System.out.println("攻撃を喰らった！");
                                         h.hp -= sa.attack;
                                         System.out.println(h.name + "の残りHP" + h.hp);
                                         System.out.println("");

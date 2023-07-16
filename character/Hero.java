@@ -27,7 +27,7 @@ public class Hero {
     }
 
     public void Experience(int OriEXP){
-        Scanner scanner = new Scanner(System.in);
+        Scanner scannerh1 = new Scanner(System.in);
         EXP += OriEXP;
         System.out.println("増やしたいステータスを選択してください");
 
@@ -38,8 +38,8 @@ public class Hero {
         System.out.println("2 : 攻撃力");
         System.out.println("3 : スピード");
 
-        int whatUp = scanner.nextInt();
-        scanner.nextLine();
+        int whatUp = scannerh1.nextInt();
+        scannerh1.nextLine();
 
         switch(whatUp){
             case 1:
@@ -70,8 +70,8 @@ public class Hero {
 
      System.out.println("Enterキーを押して次に進んでください");
         
-     scanner.nextLine(); // Enterキーが押されるまで待機
-     scanner.close();
+     scannerh1.nextLine(); // Enterキーが押されるまで待機
+     scannerh1.close();
      
     }
 

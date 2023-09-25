@@ -8,7 +8,7 @@ public class Story_02 {
     public static SuperMonster sb;
     // 退避中 public static Scanner scanner2 = new Scanner(System.in); 
     
-    public static void s0(Scanner scanner) {
+    public static void s0(Scanner scanner2) {
 
         System.out.println("どこへ向かおうか？");
         System.out.println("1:埼玉県 2:八王子市");
@@ -16,28 +16,20 @@ public class Story_02 {
         boolean validInput01 = false; // 1か2を入力させるため
         
         while (!validInput01) {
-
-            if (scanner.hasNextInt()) {
-                System.out.println("あり");
-
-            } else {
-                System.out.println("なし");
-
-            }
   
 
-            int choice01 = scanner.nextInt(); // 入力を受け取る
-            scanner.nextLine(); // 改行文字を読み捨てる
+            int choice01 = scanner2.nextInt(); // 入力を受け取る
+            scanner2.nextLine(); // 改行文字を読み捨てる
 
 
             switch (choice01) {
                 case 1:
-                    s2_1(scanner);
+                    s2_1(scanner2);
                     validInput01 = true; // 入力が正しい場合はvalidInput01をtrueに設定してループを終了
                     break;
 
                 case 2:
-                    s2_2(scanner);
+                    s2_2(scanner2);
                     validInput01 = true; // 入力が正しい場合はvalidInput01をtrueに設定してループを終了
                     break;
 
